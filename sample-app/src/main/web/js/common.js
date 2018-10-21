@@ -1,0 +1,1 @@
+const STATIC_RES_SITE = "http://127.0.0.1:38000";

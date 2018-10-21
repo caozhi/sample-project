@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+            $.ajax({
+                type: "GET",
+                url: "v1/echo",
+                dataType: "text",
+                success: function(data){
+                    $("#hello").append(data);
+                }
+            });
+        }); 
+    </script>
+</head>
+<body>
+<img src="http://127.0.0.1:38000/static-res/img/chrome-logo.png"  alt="chromelogo" />
+<p id="hello"> </p>
+</body>
+
+</html>
