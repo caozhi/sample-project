@@ -1,4 +1,4 @@
-package com.green.utl;
+package com.sample.util;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;

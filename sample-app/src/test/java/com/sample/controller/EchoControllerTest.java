@@ -1,4 +1,4 @@
-package com.green.controller;
+package com.sample.controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(locations = { "classpath:WEB-INF/sample-servlet.xml" })
+@ContextConfiguration(locations = { "classpath:sample-servlet.xml" })
 public class EchoControllerTest {
     @Autowired
     private WebApplicationContext context;
@@ -29,7 +29,7 @@ public class EchoControllerTest {
     }
 
     @Test
-    public void ownerId() throws Exception {
+    public void testEcho() throws Exception {
         mockMvc.perform((get("/v1/echo"))).andExpect(status().isOk());
     }
 }

@@ -1,6 +1,6 @@
-package com.green.controller;
+package com.sample.controller;
 
-import com.green.utl.SystemLogger;
+import com.sample.util.SystemLogger;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
